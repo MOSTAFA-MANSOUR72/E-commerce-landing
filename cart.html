@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="nav">
+      <div><a href="home.html">Home</a></div>
+      <div><a>Contact</a></div>
+      <div>
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-plus"></i>
+        </a>
+      </div>
+      <div style="cursor: pointer"><a onclick="logout()">Logout</a></div>
+    </div>
+
+    <div class="product-container2">
+      <div id="cartItemsBlock"></div>
+      <div id="cartTotalBlock">
+        Total: <span id="cartTotal">0.00</span>$
+      </div>
+      <div class="filter-form">
+         <button onclick="clearCart()" >
+          Clear Cart
+        </button>
+        <button onclick="checkout()" class="checkout-btn">
+          Checkout
+        </button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
